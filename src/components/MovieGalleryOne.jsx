@@ -52,16 +52,9 @@ class MovieGalleryOne extends Component {
               secondaryColor="rgba(114, 57, 172, 0.44)"
             />
           )}
-
           {this.state.movies &&
             this.state.movies.map((movie) => (
-              <Col
-                key={movie.imdbID}
-                xs={6}
-                sm={4}
-                md={3}
-                lg={3}
-                className="mb-5">
+              <Col key={movie.imdbID} xs={6} sm={3} md={2} className="mb-5">
                 <SingleMovie movie={movie} />
               </Col>
             ))}

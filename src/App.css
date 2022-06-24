@@ -52,10 +52,12 @@ body {
 }
 
 .card-img {
-  height: 375px;
-  width: 250px;
+  object-fit: cover;
+  height: 300px;
 }
-
+.card-body {
+  padding: 0 !important;
+}
 #card {
   background: inherit;
   border: none;
